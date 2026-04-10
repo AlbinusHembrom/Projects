@@ -11,11 +11,10 @@ public class AHStudentMarks {
         for (int i = 0; i < n; i++) {
             ahMarks[i] = sc.nextInt();
         }
+        // Print the marks of the Students
         for (int i = 0; i < n; i++)
         {
             System.out.println("Student_" + (i+1) + " marks : " + ahMarks[i]);
         }
     }
-
-
 }

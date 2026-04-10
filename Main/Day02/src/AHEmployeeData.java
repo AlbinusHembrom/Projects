@@ -5,7 +5,7 @@ class AhEmployee {
     int ahEmpId;
     double ahSalary;
 
-    // Static variable for shared company name in PascalCase
+    // Static variable for shared company name
     static String ahCompanyName = "Tech Solutions";
 
     // Constructor to initialize employee data
@@ -36,7 +36,7 @@ public class AHEmployeeData {
         int ahId1 = sc.nextInt();
         System.out.print("Salary: ");
         double ahSal1 = sc.nextDouble();
-        sc.nextLine(); // Consume newline
+        sc.nextLine();
 
         AhEmployee ahEmp1 = new AhEmployee(ahName1, ahId1, ahSal1);
 

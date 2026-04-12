@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/Day02/Day02.iml" filepath="$PROJECT_DIR$/Day02/Day02.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day03/Day03.iml" filepath="$PROJECT_DIR$/Day03/Day03.iml" />
       <module fileurl="file://$PROJECT_DIR$/Main.iml" filepath="$PROJECT_DIR$/Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core-java-oop-assignment/core-java-oop-assignment.iml" filepath="$PROJECT_DIR$/core-java-oop-assignment/core-java-oop-assignment.iml" />
     </modules>
   </component>
 </project>

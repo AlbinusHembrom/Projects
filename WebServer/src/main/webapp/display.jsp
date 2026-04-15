@@ -6,6 +6,8 @@
     <tr>
         <th>Roll No</th>
         <th>Full Name</th>
+        <th>Subject</th>
+        <th>Marks</th>
     </tr>
     <%
         List<Map<String, String>> students = (List<Map<String, String>>) request.getAttribute("students");
@@ -15,6 +17,8 @@
     <tr>
         <td><%= s.get("id") %></td>
         <td><%= s.get("name") %></td>
+        <td><%= s.get("subject")%></td>
+        <td><%= s.get("marks") %></td>
     </tr>
     <%
             }

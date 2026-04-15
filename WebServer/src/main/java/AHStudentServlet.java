@@ -14,6 +14,8 @@ public class AHStudentServlet extends HttpServlet {
         // 1. Capture the data from the form
         String id = request.getParameter("studentId");
         String name = request.getParameter("studentName");
+        String subject = request.getParameter("subject");
+        String marks = request.getParameter("marks");
         String dbPass = request.getParameter("dbPass"); // <-- Catch the password here!
 
         String url = "jdbc:mysql://localhost:3306/project_db";
@@ -28,10 +30,12 @@ public class AHStudentServlet extends HttpServlet {
             // 2. Use the variable 'dbPass' instead of a hardcoded string
             Connection conn = DriverManager.getConnection(url, user, dbPass);
 
-            String sql = "INSERT INTO students (id, name) VALUES (?, ?)";
+            String sql = "INSERT INTO students (id, name, subject, marks) VALUES (?, ?, ?, ?)";
             PreparedStatement pstmt = conn.prepareStatement(sql);
             pstmt.setInt(1, Integer.parseInt(id));
             pstmt.setString(2, name);
+            pstmt.setString(3, subject);
+            pstmt.setInt(4, Integer.parseInt(marks));
 
             pstmt.executeUpdate();
             conn.close();

@@ -6,6 +6,8 @@
 
     ID: <input type="number" name="studentId" required><br><br>
     Name: <input type="text" name="studentName" required><br><br>
+    Subject: <input type="text" name="subject" required><br><br>
+    Marks: <input type="number" name="marks" required><br><br>
 
     <input type="submit" value="Connect and Save">
 </form>

@@ -60,6 +60,8 @@ public class AHViewStudentsServlet extends HttpServlet {
                     Map<String, String> student = new HashMap<>();
                     student.put("id", rs.getString("id"));
                     student.put("name", rs.getString("name"));
+                    student.put("subject", rs.getString("subject"));
+                    student.put("marks", rs.getString("marks"));
                     studentList.add(student);
                 }
             }
